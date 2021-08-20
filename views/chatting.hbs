@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset='utf-8' />
+        <title>{{data.title}}</title>
+        <link href='css/styles.css' rel='stylesheet' />
+    </head>
+    <body>
+        <div id='hello_chatting'></div>
+        <div id='chatting_box'></div>
+        <form id='chat_form'>
+            <input id='chat_message_input' placeholder='채팅을 입력하세요' />
+            <button type='submit'>Chat</button>
+        </form>
+        <h1>{{data.title}}</h1>
+        <a href='http://localhost:3000/'>홈으로</a>
+        {{data.copyright}}
+        <script src='https://unpkg.com/@babel/standalone/babel.min.js'></script>
+        <script
+            src='https://polyfill.io/v3/polyfill.min.js?features=default%2Ces2015%2Ces2016%2Ces2017%2Ces2018%2Ces2019'
+        ></script>
+        <script
+            src='https://cdn.socket.io/3.1.3/socket.io.min.js'
+            integrity='sha384-cPwlPLvBTa3sKAgddT6krw0cJat7egBga3DJepJyrLl4Q9/5WLra3rrnMcyTyOnh'
+            crossorigin='anonymous'
+        ></script>
+        <script src='js/chat.js'></script>
+    </body>
+</html>
